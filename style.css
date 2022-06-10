@@ -41,7 +41,7 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width:40%;
+    width:70%;
     box-shadow: 0 3rem 5rem rgba(0,0,0,0.3);
     z-index: 10;
 }
@@ -72,12 +72,24 @@ body{
     color:white;
 }
 
-@media only screen and (max-width: 580px){
+@media only screen and (max-width: 400px){
 .root .display{
-    margin-right: 30px;
-    font-size: 14px;
-    font-weight: 300;
-    width:120px;
+    font-size: 12px;
+    width:70px;
     padding: 8px 0px;
 }
+.root .modal{
+    font-size: 14px;
 }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 600px){
+    .root .display{
+        font-size: 14px;
+        width:100px;
+        padding: 8px 0px;
+    }
+    .root .modal{
+        font-size: 15px;
+    }
+    }

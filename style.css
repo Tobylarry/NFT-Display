@@ -1,0 +1,83 @@
+body{
+    background-image: linear-gradient(to bottom right, rgb(126, 233, 126), green);
+    height: 97.5vh;
+}
+
+.root .buttons{
+  width:100%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top:50px;
+}
+
+.root .hidden{
+    display:none;
+}
+
+.root .overlay{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 5;
+}
+
+.root .display{
+    border-radius: 20px;
+    padding:8px 0px;
+    border:none;
+    margin-right: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    width:160px;
+    text-align: center;
+}
+
+.root .modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:40%;
+    box-shadow: 0 3rem 5rem rgba(0,0,0,0.3);
+    z-index: 10;
+}
+
+.root .detail{
+    background-color: white;
+    color: #222;
+    width:100%;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+.root img{
+    width:100%;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.root .nftDetails{
+    padding: 0px 20px;
+}
+
+.root .close{
+    text-align:right;
+    font-size:30px;
+    padding-right:15px;
+    padding-top:15px;
+    color:white;
+}
+
+@media only screen and (max-width: 580px){
+.root .display{
+    margin-right: 30px;
+    font-size: 14px;
+    font-weight: 300;
+    width:120px;
+    padding: 8px 0px;
+}
+}
